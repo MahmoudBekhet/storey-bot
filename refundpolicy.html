@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/BotLogo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome/all.min.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>storey</title>
+</head>
+
+<body class="position-relative fade-enter fade-enter-active">
+
+  <div class="stars"></div>
+  <div class="twinkle"></div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top pt-3" id="navbar">
+    <div class="container justify-content-center">
+      <div class="stars stars-nav"></div>
+      <div class="twinkle twinkle-nav"></div>
+      <a class="navbar-brand d-flex align-items-center me-5" id='navbar-brand' href="index.html">
+        <img src="./images/BotLogo.png" class="me-1 rounded-5" width="50px" height="50px" style="margin-top: -6px;">
+        <div class="fs-4 title">Storey Bot</div>
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fs-3" id="navbar-icon" style="color: white !important;">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center gap-4">
+          <li class="nav-item">
+            <a class="nav-link underline-transition underline-transition-premium premium" href="packages.html" style="color:#B197FC; font-size:16px;">
+              <i class="fa-solid fa-crown me-2" style="color: #B197FC ; font-size:18px;"></i>
+              Premium
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link support" href="" onclick="supportTeam()"><i class="fa-brands fa-discord me-2"></i>Support Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-transition" href="#feauters">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-transition" href="dashboard.html" >Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-transition" href="commands.html" >Commands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-2 join-now" href="" onclick="inviteNow()" id="join-now">Invite Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="rules terms-of-use">
+      <h1>Refund Policy</h1>
+      <p>Thank you for shopping with us. If you are not entirely satisfied with your purchase, we're here to help.</p>
+  
+      <h2>1. Returns</h2>
+      <p>You have [number] days to return an item from the date you received it. To be eligible for a return, your item must be unused and in the same condition that you received it. Your item must be in the original packaging.</p>
+  
+      <h2>2. Refunds</h2>
+      <p>Once we receive your item, we will inspect it and notify you that we have received your returned item. We will immediately notify you of the status of your refund after inspecting the item.</p>
+      <p>If your return is approved, we will initiate a refund to your original method of payment. You will receive the credit within a certain amount of days, depending on your card issuer's policies.</p>
+  
+      <h2>3. Shipping</h2>
+      <p>You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.</p>
+  
+      <h2>4. Contact Us</h2>
+      <p>If you have any questions about our Refund Policy, please contact us at [Your Contact Information].</p>  
+    </div>
+  </section>
+
+  <footer class="d-flex flex-column mx-5 text-light my-2 mt-5 position-relative " style="--bs-text-opacity: .5;" >
+    <div class="copy-right d-flex justify-content-between">
+      <span>&copy; 2024 Storey Bot. All rights reserved.</span>
+      <div class="icons d-flex gap-2 align-items-center">
+        <i class="fa-brands fa-discord" style="cursor: pointer;" onclick="discord()"></i>
+        <!-- <i class="fa-brands fa-instagram"></i> -->
+        <i class="fa-brands fa-youtube" style="cursor: pointer;" onclick="youtube()"></i>
+      </div>
+    </div>
+    <div class="rules d-flex gap-3 justify-content-center">
+      <span style="cursor: pointer;" onclick="termsOfUse()">- Terms Of Use </span>
+      <span style="cursor: pointer;" onclick="privacyPolicy()">Privacy Policy </span>
+      <span style="cursor: pointer;" onclick="refundPolicy()"> Refund Policy -</span>
+    </div>
+
+  </footer>
+
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./fontawesome/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

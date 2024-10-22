@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/BotLogo.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome/all.min.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>storey</title>
+</head>
+
+<body class="position-relative fade-enter fade-enter-active">
+
+  <div class="stars"></div>
+  <div class="twinkle"></div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top pt-3" id="navbar">
+    <div class="container justify-content-center">
+      <div class="stars stars-nav"></div>
+      <div class="twinkle twinkle-nav"></div>
+      <a class="navbar-brand d-flex align-items-center me-5" id='navbar-brand' href="index.html">
+        <img src="./images/BotLogo.png" class="me-1 rounded-5" width="50px" height="50px" style="margin-top: -6px;">
+        <div class="fs-4 title">Storey Bot</div>
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fs-3" id="navbar-icon" style="color: white !important;">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center gap-4">
+          <li class="nav-item">
+            <a class="nav-link underline-transition underline-transition-premium premium" href="packages.html" style="color:#B197FC; font-size:16px;">
+              <i class="fa-solid fa-crown me-2" style="color: #B197FC ; font-size:18px;"></i>
+              Premium
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link support" href="" onclick="supportTeam()"><i class="fa-brands fa-discord me-2"></i>Support Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-transition" href="#feauters">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-transition" href="dashboard.html" >Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link underline-transition" href="commands.html" >Commands</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-2 join-now" href="" onclick="inviteNow()" id="join-now">Invite Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="rules terms-of-use">
+      <h1>Privacy Policy</h1>
+      <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+  
+      <h2>1. Information We Collect</h2>
+      <p>We may collect personal information that you provide to us directly, such as your name, email address, and any other details you choose to provide.</p>
+  
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to improve our website, send you updates, respond to inquiries, and for other customer service purposes.</p>
+  
+      <h2>3. Sharing Your Information</h2>
+      <p>We do not share your personal information with third parties except as necessary to comply with the law, or to protect our rights.</p>
+  
+      <h2>4. Security of Your Information</h2>
+      <p>We use administrative, technical, and physical security measures to protect your personal information. However, no security measures are perfect, and we cannot guarantee complete security.</p>
+  
+      <h2>5. Your Privacy Rights</h2>
+      <p>You have the right to request access to, correction, or deletion of your personal information. Please contact us if you wish to exercise these rights.</p>
+  
+      <h2>6. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on our website.</p>
+  
+      <h2>7. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].</p>
+  
+    </div>
+  </section>
+
+  <footer class="d-flex flex-column mx-5 text-light my-2 mt-5 position-relative " style="--bs-text-opacity: .5;" >
+    <div class="copy-right d-flex justify-content-between">
+      <span>&copy; 2024 Storey Bot. All rights reserved.</span>
+      <div class="icons d-flex gap-2 align-items-center">
+        <i class="fa-brands fa-discord" style="cursor: pointer;" onclick="discord()"></i>
+        <!-- <i class="fa-brands fa-instagram"></i> -->
+        <i class="fa-brands fa-youtube" style="cursor: pointer;" onclick="youtube()"></i>
+      </div>
+    </div>
+    <div class="rules d-flex gap-3 justify-content-center">
+      <span style="cursor: pointer;" onclick="termsOfUse()">- Terms Of Use </span>
+      <span style="cursor: pointer;" onclick="privacyPolicy()">Privacy Policy </span>
+      <span style="cursor: pointer;" onclick="refundPolicy()"> Refund Policy -</span>
+    </div>
+
+  </footer>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./fontawesome/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
